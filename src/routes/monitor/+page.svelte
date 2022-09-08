@@ -124,16 +124,10 @@
 </table>
 <div style="display: flex; align-items: center; justify-content: space-between">
 <button
-        class="material-icons"
-        action="first-page"
-        title="First page"
         on:click={() => currentPage = 0}
         disabled={currentPage === 0}>First Page
 </button>
 <button
-        class="material-icons"
-        action="prev-page"
-        title="Prev page"
         on:click={() => currentPage--}
         disabled={currentPage === 0}>Prev Page
 </button>
@@ -141,16 +135,10 @@
     {start + 1}-{end} of {displayData.length}
 </span>
 <button
-        class="material-icons"
-        action="next-page"
-        title="Next page"
         on:click={() => currentPage++}
         disabled={currentPage === lastPage}>Next Page
 </button>
 <button
-        class="material-icons"
-        action="last-page"
-        title="Last page"
         on:click={() => currentPage = lastPage}
         disabled={currentPage === lastPage}>Last Page
 </button>
